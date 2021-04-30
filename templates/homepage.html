@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Prediction using ML</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/homepage.css"> -->
+    <style>
+        body{
+            background-color:whitesmoke;
+            background-image: url("jam2.jpg");
+            
+            background-size: cover; 
+        }
+
+
+        h2{
+            color:black;
+        }
+        #b1{
+            margin: 0px;
+            padding: 10px 70px 10px 70px;
+            font-size: 20px;
+                
+        }
+        #b2{
+            margin: 0px;
+            padding: 10px 66px 10px 66px;
+            font-size: 20px; 
+        }
+        div{
+            border: 3px solid white;
+            margin: auto;
+            text-align: center;
+            width: 40%;
+            padding-bottom: 5%;
+            margin-top: 5%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <br><br>
+        <h1 style="color: black;">Traffic Prediction Using ML</h1>
+        <div>
+            <br><br>
+            <a href="{{ url_for('predict') }}"><button class="btn btn-primary" id="b2">Predict</button></a>
+       </div>
+    </center>
+    
+</body>
+</html>
